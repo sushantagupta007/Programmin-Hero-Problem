@@ -14,7 +14,7 @@ function maxNumber(numbers){
 let maximumNumber = maxNumber(createdArray);
 console.log(maximumNumber);
 
-//Smalles Number
+//Smallest Number
 function smallestNumber(numbers){
     let smallest= numbers[0];
     for(let i=0;i<numbers.length;i++){
@@ -30,7 +30,7 @@ smallestNumber(createdArray);
 
 let negativeArray = [-1,-4,-3,-0.3, -99];
 
-//Negative Smallest Number
+//Negative Largest Number
 function negativeMaxValue (numbers){
     let largest = numbers[0];
     for(x=1;x<numbers.length;x++){
@@ -45,7 +45,7 @@ function negativeMaxValue (numbers){
 
 negativeMaxValue(negativeArray);
 
-//Negatvie Largets Number
+//Negatvie smallest Number
 function negativeMinValue (numbers){
     let smallest = numbers[0];
     for(x=1;x<numbers.length;x++){
