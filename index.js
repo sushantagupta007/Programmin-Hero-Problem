@@ -1,36 +1,21 @@
-const phones  = [
-   {name:"Samsung", price:400,camera:10,storage:32, quantity:5}, 
-   {name:"walton32",price:400,camera:8,storage:32, quantity:5}, 
-   {name:"Shaomi32",price:400,camera:7,storage:32, quantity:5}, 
-   {name:"Shaomi32",price:400,camera:7,storage:32, quantity:5}, 
-   {name:"Shaomi32",price:400,camera:7,storage:32, quantity:5}, 
-   {name:"Shaomi32",price:400,camera:7,storage:32, quantity:5}, 
+const myFriend = ["Gupta", "Sazal","Sagor","Mehedi","Mridul", "Jony", "Amit","Nayem", "JE Besi para dey"];
 
-]
-//NOrmal Loop
-/* function totalPriceForLoop (arrays){
-        let totalCost = 0;
-    for(let x=0; x<arrays.length;x++){
-        let mobilePrice = arrays[x].price;
-        totalCost+=mobilePrice;
+function bestFriend (friends){
+    let baseLength = friends[0].length
+    for(let i=0;i<friends.length;i++){
+        let nameLength = friends[i].length;
+        if(nameLength>baseLength){
+            [baseLength]=[nameLength];
+            // console.log(baseLength);
+        }
     }
-    console.log(totalCost);
-}
-totalPriceForLoop(phones); */
-
-//For of loop
-
-function totalPriceForOfLoop (arrays){
-    let total =0 ;
-    for(const element of arrays){
-        let quantity = element.quantity;
-        let mobileName = element.name;
-        let mobilePrice = element.price;
-        let totalPrice = quantity*mobilePrice;
-        console.log(mobileName, ":", mobilePrice, "bought", quantity);
-        total +=totalPrice;
+    for(const name of friends){
+        if(name.length===baseLength){
+            return name;
+        }
     }
-    console.log("Total Price",total);
 }
 
-totalPriceForOfLoop(phones)
+
+let maxF = bestFriend(myFriend);
+console.log(maxF);
