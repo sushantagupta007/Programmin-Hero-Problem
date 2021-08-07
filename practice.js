@@ -77,7 +77,7 @@ function paperRequirement(firstBookQuantiy, secondBook, thirdBook){
     return totalPage;
 }
 let pages = paperRequirement(10,20,30);
-console.log(pages); */
+console.log(pages); 
 
 const myFriend = ["Gupta", "Sazal","Sagor","Mehedi","Mridul", "Jony", "Amit","Nayem", "JE Besi para dey"];
 
@@ -100,3 +100,17 @@ function bestFriend (friends){
 
 let maxF = bestFriend(myFriend);
 console.log(maxF);
+*/
+
+let numbersArray = [1,2,-3,45,5,4,-5,34,4,344,34,5,34434,344, -3,45,34];
+let newArray= [];
+for(const number of numbersArray){
+    if(number<0){
+       break;
+    }
+    else if(number>0){
+        newArray.push(number);
+    }
+}
+
+console.log(newArray);
